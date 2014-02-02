@@ -47,15 +47,6 @@ Files: hidtest/hidtest.cpp
 Copyright: Copyright 2009, All Rights Reserved.
 License: HIDAPI
 
-Files: windows/ddk_build/makefile
-Copyright: Copyright (C) Microsoft Corporation 1995, 1996
-License: All Rights Reserved
-
-Files: testgui/mac_support.cpp
-Copyright: Alan Ott
-License: Some of this code is from Apple Documentation, most notably
- http://developer.apple.com/legacy/mac/library/documentation/AppleScript/Conceptual/AppleEvents/AppleEvents.pdf
-
 Files: hidapi/m4/ax_pthread.m4
 Copyright: Copyright (c) 2008 Steven G. Johnson <stevenj@alum.mit.edu>
 	   Copyright (c) 2011 Daniel Richard G. <skunk@iSKUNK.ORG>
