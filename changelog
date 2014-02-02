@@ -1,0 +1,5 @@
+hidapi (0.7.0+git20130909.a88c724-1) unstable; urgency=low
+
+  * Initial release (Closes: #724568)
+
+ -- Scott Talbert <swt@techie.net>  Tue, 1 Oct 2013 22:46:00 -0400

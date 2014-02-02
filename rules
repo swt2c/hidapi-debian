@@ -1,0 +1,13 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@  --with autoreconf
+
+override_dh_strip:
+ifeq ($(DEB_HOST_ARCH_OS), kfreebsd)
+	dh_strip -plibhidapi0 --dbg-package=libhidapi0-dbg
+endif
+ifeq ($(DEB_HOST_ARCH_OS), linux)
+	dh_strip -plibhidapi-libusb0 --dbg-package=libhidapi-libusb0-dbg
+	dh_strip -plibhidapi-hidraw0 --dbg-package=libhidapi-hidraw0-dbg
+endif
