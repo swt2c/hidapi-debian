@@ -10,7 +10,7 @@ Package: libhidapi-dev
 Section: libdevel
 Architecture: linux-any freebsd-any
 Multi-Arch: same
-Depends: ${misc:Depends}, libhidapi0 (= ${binary:Version}) [!linux-any], libhidapi-libusb0 (= ${binary:Version}) [linux-any], libhidapi-hidraw0 (= ${binary:Version}) [linux-any]
+Depends: ${misc:Depends}, libhidapi-libusb0 (= ${binary:Version}) [any], libhidapi-hidraw0 (= ${binary:Version}) [linux-any]
 Description: Multi-Platform library for communication with HID devices (development files)
  HIDAPI is a multi-platform library enabling applications to easily
  interface with Bluetooth and USB HID-class devices.
@@ -18,19 +18,8 @@ Description: Multi-Platform library for communication with HID devices (developm
  This package contains the files needed to compile and link programs which
  use HIDAPI.
 
-Package: libhidapi0
-Architecture: freebsd-any
-Multi-Arch: same
-Pre-Depends: ${misc:Pre-Depends}
-Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: Multi-Platform library for communication with HID devices
- HIDAPI is a multi-platform library enabling applications to easily
- interface with Bluetooth and USB HID-class devices.
- .
- This package contains the files needed to run programs which use HIDAPI.
-
 Package: libhidapi-libusb0
-Architecture: linux-any
+Architecture: any
 Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}
@@ -50,17 +39,6 @@ Description: Multi-Platform library for communication with HID devices (hidraw b
  interface with Bluetooth and USB HID-class devices.
  .
  This package contains the hidraw-based implementation of HIDAPI.
-
-Package: libhidapi0-dbg
-Architecture: freebsd-any
-Multi-Arch: same
-Section: debug
-Depends: libhidapi0 (= ${binary:Version}), ${misc:Depends}
-Description: Debugging symbols for libhidapi0
- HIDAPI is a multi-platform library enabling applications to easily
- interface with Bluetooth and USB HID-class devices.
- .
- This package contains the debugging symbols for libhidapi0.
 
 Package: libhidapi-libusb0-dbg
 Architecture: linux-any
