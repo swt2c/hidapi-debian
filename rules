@@ -21,7 +21,7 @@ get-orig-source:
 	rm $(TMPTAR)
 	rm hidapi-$(COMMIT)/windows/ddk_build/makefile
 	rm hidapi-$(COMMIT)/testgui/mac_support.cpp
-	mv hidapi-$(COMMIT) hidapi_$(DEBVER).orig
-	tar cf hidapi_$(DEBVER).orig.tar hidapi_$(DEBVER).orig
-	rm -r hidapi_$(DEBVER).orig
+	mv hidapi-$(COMMIT) hidapi-$(DEBVER)
+	tar cf hidapi_$(DEBVER).orig.tar hidapi-$(DEBVER)
+	rm -r hidapi-$(DEBVER)
 	bzip2 -9 hidapi_$(DEBVER).orig.tar
