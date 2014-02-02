@@ -9,7 +9,7 @@ ifeq ($(DEB_HOST_ARCH_OS), linux)
 	dh_strip -plibhidapi-hidraw0 --dbg-package=libhidapi-hidraw0-dbg
 endif
 
-COMMIT := a88c7244d632ed238b829968be9b765605b53c34
+COMMIT := 3a66d4e513ed1b1ce82b7e6fcfa30ff05598b696
 TMPTAR := hidapi.tar.gz
 DEBVER := $(shell dpkg-parsechangelog | grep ^Version: | cut -d' ' -f2 \
 	| cut -d- -f1)

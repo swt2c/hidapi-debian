@@ -1,3 +1,13 @@
+hidapi (0.7.0+git20140201.3a66d4e-1) unstable; urgency=low
+
+  * Upgrade to latest upstream version (3a66d4e).
+  * Removed special FreeBSD package; FreeBSD now uses libusb package.
+  * Clarify/update copyright information (thanks Klee Dienes for patch).
+  * Add a get-orig-source to rules which downloads from GitHub, removes
+    non-free files, and repacks.
+
+ -- Scott Talbert <swt@techie.net>  Sat, 01 Feb 2014 20:55:58 -0500
+
 hidapi (0.7.0+git20130909.a88c724-1) unstable; urgency=low
 
   * Initial release (Closes: #724568)
