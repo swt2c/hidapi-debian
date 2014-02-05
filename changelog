@@ -1,3 +1,17 @@
+hidapi (0.8.0~rc1+git20140201.3a66d4e+dfsg-1) unstable; urgency=low
+
+  * Incorporate patch from Klee Dienes (bump version number to match latest
+    GitHub tag, include dfsg in version due to removing non-free files, bump
+    standards version, add Files-Excluded listing to copyright file, add
+    --parallel to dh command in rules, add watch file).
+  * Update license for debian/* to HIDAPI.
+  * Add patch to link libhidapi-libusb with pthreads.
+  * Added symbols files.
+  * Cleanup copyright file to clear lintian warnings.
+  * Remove kFreeBSD support for now.
+
+ -- Scott Talbert <swt@techie.net>  Sun, 02 Feb 2014 23:22:26 -0500
+
 hidapi (0.7.0+git20140201.3a66d4e-1) unstable; urgency=low
 
   * Upgrade to latest upstream version (3a66d4e).

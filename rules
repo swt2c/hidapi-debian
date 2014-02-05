@@ -1,7 +1,7 @@
 #!/usr/bin/make -f
 
 %:
-	dh $@  --with autoreconf
+	dh $@ --parallel --with autoreconf
 
 override_dh_strip:
 	dh_strip -plibhidapi-libusb0 --dbg-package=libhidapi-libusb0-dbg
