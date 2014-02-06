@@ -1,6 +1,7 @@
 commit 7885aa76c86ab2cf7a06600506680d1976f8971f
 Author: Scott Talbert <swt@techie.net>
 Date:   Mon Feb 3 19:06:07 2014 -0500
+Bug: https://github.com/signal11/hidapi/pull/150
 
     Include PTHREAD_CFLAGS when linking libhidapi-libusb
     

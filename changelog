@@ -1,3 +1,11 @@
+hidapi (0.8.0~rc1+git20140201.3a66d4e+dfsg-2) unstable; urgency=low
+
+  * Update copyright date on debian/* files.
+  * Include link to bug report for patch.
+  * Include HIDAPI license text as a comment in copyright file.
+
+ -- Scott Talbert <swt@techie.net>  Tue, 04 Feb 2014 23:09:37 -0500
+
 hidapi (0.8.0~rc1+git20140201.3a66d4e+dfsg-1) unstable; urgency=low
 
   * Incorporate patch from Klee Dienes (bump version number to match latest
