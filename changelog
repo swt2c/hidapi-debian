@@ -1,3 +1,11 @@
+hidapi (0.8.0~rc1+git20140201.3a66d4e+dfsg-3) unstable; urgency=low
+
+  * Add --disable-silent-rules to configuration to make the compile flags
+    visible.
+  * Reintroduce support for kFreeBSD.
+
+ -- Scott Talbert <swt@techie.net>  Thu, 03 Apr 2014 18:42:07 -0400
+
 hidapi (0.8.0~rc1+git20140201.3a66d4e+dfsg-2) unstable; urgency=low
 
   * Update copyright date on debian/* files.

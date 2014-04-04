@@ -3,10 +3,16 @@
 %:
 	dh $@ --parallel --with autoreconf
 
+override_dh_auto_configure:
+	dh_auto_configure -- --disable-silent-rules
+
 override_dh_strip:
-	dh_strip -plibhidapi-libusb0 --dbg-package=libhidapi-libusb0-dbg
 ifeq ($(DEB_HOST_ARCH_OS), linux)
+	dh_strip -plibhidapi-libusb0 --dbg-package=libhidapi-libusb0-dbg
 	dh_strip -plibhidapi-hidraw0 --dbg-package=libhidapi-hidraw0-dbg
+endif
+ifeq ($(DEB_HOST_ARCH_OS), kfreebsd)
+	dh_strip -plibhidapi0 --dbg-package=libhidapi0-dbg
 endif
 
 COMMIT := 3a66d4e513ed1b1ce82b7e6fcfa30ff05598b696
