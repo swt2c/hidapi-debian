@@ -1,3 +1,13 @@
+hidapi (0.8.0~rc1+git20151103.d17db57+dfsg-1) unstable; urgency=low
+
+  * Update to latest upstream git commit
+  * Removed patches as they have been incorporated upstream
+  * Fix watch file
+  * Update to latest standards version
+  * Update copyright file to eliminate lintian warnings
+
+ -- Scott Talbert <swt@techie.net>  Tue, 03 Nov 2015 20:31:09 -0500
+
 hidapi (0.8.0~rc1+git20140201.3a66d4e+dfsg-3) unstable; urgency=low
 
   * Add --disable-silent-rules to configuration to make the compile flags

@@ -15,7 +15,7 @@ ifeq ($(DEB_HOST_ARCH_OS), kfreebsd)
 	dh_strip -plibhidapi0 --dbg-package=libhidapi0-dbg
 endif
 
-COMMIT := 3a66d4e513ed1b1ce82b7e6fcfa30ff05598b696
+COMMIT := d17db57b9d4354752e0af42f5f33007a42ef2906
 TMPTAR := hidapi.tar.gz
 DEBVER := $(shell dpkg-parsechangelog | grep ^Version: | cut -d' ' -f2 \
 	| cut -d- -f1)

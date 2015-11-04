@@ -4,7 +4,7 @@ Source: http://github.com/signal11/hidapi
 Files-Excluded:
  windows/ddk_build/makefile
  testgui/mac_support.cpp
-License:
+License: HIDAPI-License-Overview
  HIDAPI can be used under one of three licenses.
  .
  1. The GNU General Public License, version 3.0, in LICENSE-gpl3.txt
@@ -18,13 +18,7 @@ License:
  2. An author of commercial closed-source software would likely use HIDAPI
  under the terms of the BSD-style license or the original HIDAPI license.
 
-Files: LICENSE.txt
- linux/hid.c
- windows/hid.c
- hidapi/hidapi.h
- libusb/hid.c
- Makefile.am
- mac/hid.c
+Files: *
 Copyright: 2009-2013 Alan Ott <alan@signal11.us>
            2010-2013 Ludovic Rousseau <rousseau@debian.org>
 License: GPL-3.0 or BSD-3-clause or HIDAPI
@@ -51,7 +45,7 @@ Files: hidtest/hidtest.cpp
 Copyright: Copyright 2009, All Rights Reserved.
 License: HIDAPI
 
-Files: hidapi/m4/ax_pthread.m4
+Files: m4/ax_pthread.m4
 Copyright: Copyright (c) 2008 Steven G. Johnson <stevenj@alum.mit.edu>
 	   Copyright (c) 2011 Daniel Richard G. <skunk@iSKUNK.ORG>
 License: GPL-3+ with Autoconf exception

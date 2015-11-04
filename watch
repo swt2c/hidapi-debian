@@ -1,3 +1,3 @@
 version=3
-opts="uversionmangle=s/\.?-rc/~rc/,dversionmangle=s/\.dfsg//" \
-http://githubredir.debian.net/githubredir.cgi?author=signal11&project=hidapi .*hidapi-(.+)\.(?:zip|tgz|tbz|txz|(?:tar\.(?:gz|bz2|xz)))
+opts="uversionmangle=s/\.?-rc/~rc/,dversionmangle=s/\+.*dfsg$//,filenamemangle=s/.+\/?(\d\S*)\.tar\.gz/hidapi-$1\.tar\.gz/" \
+https://github.com/signal11/hidapi/tags .*/hidapi-?(\d\S*)\.tar\.gz
