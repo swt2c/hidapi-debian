@@ -1,4 +1,4 @@
-hidapi (0.8.0~rc1+git20151103.d17db57+dfsg-1) unstable; urgency=low
+hidapi (0.8.0~rc1+git20140818.d17db57+dfsg-1) unstable; urgency=low
 
   * Update to latest upstream git commit
   * Removed patches as they have been incorporated upstream
